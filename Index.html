@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- ================= OFFICIAL LINK ================= -->
+<link rel="canonical" href="https://primefocusinstitute.com/verify">
+
+<meta property="og:url" content="https://primefocusinstitute.com/verify">
+<meta property="og:title" content="Certificate Verification | Prime Focus Institute of Photography">
+<meta property="og:description" content="Official certificate verification portal of Prime Focus Institute of Photography">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://primefocusinstitute.com/logo.png">
+<meta property="og:site_name" content="Prime Focus Institute of Photography">
+
+<!-- ================= TWITTER PREVIEW ================= -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Certificate Verification | Prime Focus Institute of Photography">
+<meta name="twitter:description" content="Official student certificate verification portal">
+<meta name="twitter:image" content="https://primefocusinstitute.com/logo.png">
+
+<!-- ================= BASIC META ================= -->
+<meta charset="UTF-8">
+<title>Certificate Verification | Prime Focus Institute of Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Official certificate verification page of Prime Focus Institute of Photography. Verify student certificate details online.">
+<meta name="keywords" content="certificate verification, photography institute, student certificate, prime focus institute">
+<meta name="author" content="Prime Focus Institute of Photography">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#e18029">
+
+<!-- ================= OPEN GRAPH (GitHub / Social Preview) ================= -->
+<meta property="og:title" content="Certificate Verification | Prime Focus Institute of Photography">
+<meta property="og:description" content="Official student certificate verification portal">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo.png">
+<meta property="og:site_name" content="Prime Focus Institute of Photography">
+
+<style>
+:root {
+  --primary: #e18029;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ececec;
+  display: flex;
+  justify-content: center;
+}
+
+/* ================= PAGE ================= */
+.page-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  animation: pageFade 0.6s ease;
+  position: relative; /* REQUIRED FOR WATERMARK */
+}
+
+/* ================= PAGE WATERMARK ================= */
+.page-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("logo.png") center/420px no-repeat;
+  opacity: 0.12;               /* visible but clean */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Keep content above watermark */
+.page-wrapper > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= HEADER ================= */
+.header {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  animation: headerSlide 0.7s ease;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border: 2px dashed #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* CENTER TEXT */
+.header-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.header-text small {
+  font-size: 13px;
+}
+
+/* PRINT BUTTON */
+.print-btn {
+  margin-left: auto;
+  background: #fff;
+  color: var(--primary);
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ================= CERTIFICATE ================= */
+.certificate {
+  padding: 25px;
+  animation: contentFade 0.9s ease;
+}
+
+/* VERIFIED */
+.verified {
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  animation: verifiedPulse 1.4s infinite;
+}
+
+/* INFO GRID */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 30px;
+  font-size: 14px;
+}
+
+.info-grid div {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 4px;
+}
+
+.info-grid span {
+  font-weight: 600;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+table th {
+  background: var(--primary);
+  color: #fff;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+  animation: rowReveal 0.8s ease;
+}
+
+/* SUMMARY */
+.summary {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes pageFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes headerSlide {
+  from { transform: translateY(-25px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes contentFade {
+  from { transform: translateY(25px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes verifiedPulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes rowReveal {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= PRINT ================= */
+@media print {
+  body {
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-btn {
+    display: none !important;
+  }
+
+  * {
+    animation: none !important;
+  }
+
+  .page-wrapper {
+    max-width: 100%;
+  }
+
+  .certificate {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">LOGO</div>
+
+    <div class="header-text">
+      <h1>Prime Focus Institute of Photography</h1>
+      <small>Official Certificate Verification</small>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">🖨 Print</button>
+  </div>
+
+  <!-- CERTIFICATE -->
+  <div class="certificate">
+
+    <div class="verified">✔ VERIFIED</div>
+
+    <div class="info-grid">
+      <div><span>Student Name:</span> ____________</div>
+      <div><span>Enrollment No:</span> ____________</div>
+      <div><span>Father Name:</span> ____________</div>
+      <div><span>Certificate No:</span> ____________</div>
+      <div><span>Date of Birth:</span> ____________</div>
+      <div><span>Roll Number:</span> ____________</div>
+      <div><span>Course Name:</span> ____________</div>
+      <div><span>Session:</span> ____________</div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Subject</th>
+          <th>Mark</th>
+          <th>Internal</th>
+          <th>Total Obtained</th>
+          <th>Total</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PF101</td>
+          <td>Photography Basics</td>
+          <td>70</td>
+          <td>20</td>
+          <td>90</td>
+          <td>100</td>
+          <td>A</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <strong>Total:</strong> 90 / 100<br>
+      <strong>Percentage:</strong> 90%<br>
+      <strong>Grade:</strong> A<br>
+      <strong>Result:</strong> Pass<br>
+      <strong>Date of Issue:</strong> __ / __ / ____
+    </div>
+
+    <footer id="footer"></footer>
+
+  </div>
+</div>
+
+<script>
+const now = new Date();
+const pad = n => n.toString().padStart(2, '0');
+const time = `${pad(now.getDate())}/${pad(now.getMonth()+1)}/${now.getFullYear()} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+
+document.getElementById("footer").innerHTML = `
+This certificate verification was checked on ${time}<br>
+© ${now.getFullYear()} Prime Focus Institute of Photography | All Rights Reserved<br>
+Contact: primefocos@gmail.com
+`;
+</script>
+
+</body>
+</html>
