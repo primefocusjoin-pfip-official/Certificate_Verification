@@ -65,7 +65,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("logo.png") center/420px no-repeat;
+  background: url("https://primefocusjoin-pfip-official.github.io/Certificate_Verification/Watermark.png") center/100% no-repeat;
   opacity: 0.12;               /* visible but clean */
   pointer-events: none;
   z-index: 0;
@@ -91,7 +91,6 @@ body {
 .logo {
   width: 55px;
   height: 55px;
-  border: 2px dashed #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,12 +120,12 @@ body {
 .print-btn {
   margin-left: auto;
   background: #fff;
-  color: var(--primary);
+  color: white;
   border: none;
-  padding: 7px 14px;
+  padding: 0px 18px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0px;
 }
 
 /* ================= CERTIFICATE ================= */
@@ -262,15 +261,18 @@ footer {
 <div class="page-wrapper">
 
   <!-- HEADER -->
-  <div class="header">
-    <div class="logo">LOGO</div>
+<div class="header">
+	<div class="logo"> <img src="https://primefocusjoin-pfip-official.github.io/Certificate_Verification/LOGO.png" alt="LOGO" height="65"  style="height:65px; width:65px; border-radius:50%; object-fit:cover;">
+	</div>
 
     <div class="header-text">
       <h1>Prime Focus Institute of Photography</h1>
       <small>Official Certificate Verification</small>
     </div>
 
-    <button class="print-btn" onclick="window.print()">🖨 Print</button>
+    <button title="Print_Certificate" class="print-btn" onclick="window.print()">
+<img src="https://primefocusjoin-pfip-official.github.io/Certificate_Verification/Print1.png" style="height:30px; width:30px; object-fit:cover;">
+</button>
   </div>
 
   <!-- CERTIFICATE -->
